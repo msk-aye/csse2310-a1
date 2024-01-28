@@ -1,0 +1,263 @@
+URL to view log online:
+https://source.eait.uq.edu.au/viewvc/csse2310-sem2-s4751192/trunk/a1/?view=log
+
+Retrieving logs at Thu Aug 24 15:45:38 AEST 2023
+------------------------------------------------------------------------
+r1 | uqpsutto | 2023-08-02 14:20:52 +1000 (Wed, 02 Aug 2023) | 1 line
+Changed paths:
+   A /play
+   A /prac
+   A /trunk
+   A /trunk/a1
+   A /trunk/a3
+   A /trunk/a4
+
+Initial repository structure
+
+
+------------------------------------------------------------------------
+r2 | s4751192 | 2023-08-11 07:15:57 +1000 (Fri, 11 Aug 2023) | 2 lines
+Changed paths:
+   A /trunk/a1/uqwordladder.c
+
+Creation of file. Defined some functions and annotated functionality. 
+
+
+Index: uqwordladder.c
+ uqwordladder.c |   60 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 60 insertions(+)
+
+------------------------------------------------------------------------
+r3 | s4751192 | 2023-08-11 07:38:35 +1000 (Fri, 11 Aug 2023) | 2 lines
+Changed paths:
+   A /trunk/a1/makefile
+
+Added simple makefile.
+
+
+Index: makefile
+ makefile |   11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+------------------------------------------------------------------------
+r4 | s4751192 | 2023-08-11 18:26:40 +1000 (Fri, 11 Aug 2023) | 2 lines
+Changed paths:
+   M /trunk/a1/makefile
+   M /trunk/a1/uqwordladder.c
+
+Remove errors in command line parsing.
+
+
+Index: makefile
+ makefile |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Index: uqwordladder.c
+ uqwordladder.c |   67 ++++++++++++++++++++++++++++++++++++++-------------------
+ 1 file changed, 45 insertions(+), 22 deletions(-)
+
+------------------------------------------------------------------------
+r5 | s4751192 | 2023-08-15 11:08:05 +1000 (Tue, 15 Aug 2023) | 2 lines
+Changed paths:
+   M /trunk/a1/makefile
+   M /trunk/a1/uqwordladder.c
+
+Precautionary commit prior to editing large blocks of code.
+
+
+Index: makefile
+ makefile |   11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+Index: uqwordladder.c
+ uqwordladder.c |  109 ++++++++++++++++++++++++++++++++++++++++++++++-----------
+ 1 file changed, 88 insertions(+), 21 deletions(-)
+
+------------------------------------------------------------------------
+r6 | s4751192 | 2023-08-15 13:12:13 +1000 (Tue, 15 Aug 2023) | 2 lines
+Changed paths:
+   M /trunk/a1/uqwordladder.c
+
+Implemented command line parsing and usage error checks.
+
+
+Index: uqwordladder.c
+ uqwordladder.c |  131 ++++++++++++++++++++++++++++++++-------------------------
+ 1 file changed, 74 insertions(+), 57 deletions(-)
+
+------------------------------------------------------------------------
+r7 | s4751192 | 2023-08-16 09:13:11 +1000 (Wed, 16 Aug 2023) | 2 lines
+Changed paths:
+   M /trunk/a1/uqwordladder.c
+
+Fully implemented all validity checks of values.
+
+
+Index: uqwordladder.c
+ uqwordladder.c |   76 ++++++++++++++++++++++++++++++++++++++++++++++++---------
+ 1 file changed, 65 insertions(+), 11 deletions(-)
+
+------------------------------------------------------------------------
+r8 | s4751192 | 2023-08-16 18:32:55 +1000 (Wed, 16 Aug 2023) | 2 lines
+Changed paths:
+   M /trunk/a1/makefile
+   M /trunk/a1/uqwordladder.c
+
+Implemented dictionary opening and generating first and end words if unspecified.
+
+
+Index: makefile
+ makefile |    4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Index: uqwordladder.c
+ uqwordladder.c |   73 +++++++++++++++++++++++++++++++++++++++++++++++++--------
+ 1 file changed, 64 insertions(+), 9 deletions(-)
+
+------------------------------------------------------------------------
+r9 | s4751192 | 2023-08-16 18:41:39 +1000 (Wed, 16 Aug 2023) | 2 lines
+Changed paths:
+   M /trunk/a1/uqwordladder.c
+
+Added support for exiting the game with ctrl+D.
+
+
+Index: uqwordladder.c
+ uqwordladder.c |   11 +++++++----
+ 1 file changed, 7 insertions(+), 4 deletions(-)
+
+------------------------------------------------------------------------
+r10 | s4751192 | 2023-08-22 11:57:09 +1000 (Tue, 22 Aug 2023) | 3 lines
+Changed paths:
+   M /trunk/a1/makefile
+   M /trunk/a1/uqwordladder.c
+
+Added -g flag for debugger.
+Added a check_valid_words function to parse dictionary.
+
+
+Index: makefile
+ makefile |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Index: uqwordladder.c
+ uqwordladder.c |  161 ++++++++++++++++++++++++++++++++++++++++++++-------------
+ 1 file changed, 125 insertions(+), 36 deletions(-)
+
+------------------------------------------------------------------------
+r11 | s4751192 | 2023-08-23 18:17:57 +1000 (Wed, 23 Aug 2023) | 2 lines
+Changed paths:
+   M /trunk/a1/uqwordladder.c
+
+Fixed get_valid_words() function
+
+
+Index: uqwordladder.c
+ uqwordladder.c |  212 +++++++++++++++++++++++++++++++++------------------------
+ 1 file changed, 126 insertions(+), 86 deletions(-)
+
+------------------------------------------------------------------------
+r12 | s4751192 | 2023-08-24 00:39:08 +1000 (Thu, 24 Aug 2023) | 2 lines
+Changed paths:
+   M /trunk/a1/uqwordladder.c
+
+Added all necessray functions and fized bugs.
+
+
+Index: uqwordladder.c
+ uqwordladder.c |  510 ++++++++++++++++++++++++++++++++++-----------------------
+ 1 file changed, 313 insertions(+), 197 deletions(-)
+
+------------------------------------------------------------------------
+r13 | s4751192 | 2023-08-24 11:36:26 +1000 (Thu, 24 Aug 2023) | 2 lines
+Changed paths:
+   M /trunk/a1/uqwordladder.c
+
+Improved all functions to better reflect the task.
+
+
+Index: uqwordladder.c
+ uqwordladder.c |   89 +++++++++++++++++++++++++++++++--------------------------
+ 1 file changed, 49 insertions(+), 40 deletions(-)
+
+------------------------------------------------------------------------
+r14 | s4751192 | 2023-08-24 11:36:50 +1000 (Thu, 24 Aug 2023) | 2 lines
+Changed paths:
+   M /trunk/a1/makefile
+
+Added .o target
+
+
+Index: makefile
+ makefile |    9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
+------------------------------------------------------------------------
+r15 | s4751192 | 2023-08-24 14:44:43 +1000 (Thu, 24 Aug 2023) | 2 lines
+Changed paths:
+   M /trunk/a1/uqwordladder.c
+
+Added all function comments
+
+
+Index: uqwordladder.c
+ uqwordladder.c |  633 ++++++++++++++++++++++++++++++++++++++++-----------------
+ 1 file changed, 446 insertions(+), 187 deletions(-)
+
+------------------------------------------------------------------------
+r16 | s4751192 | 2023-08-24 14:55:09 +1000 (Thu, 24 Aug 2023) | 2 lines
+Changed paths:
+   M /trunk/a1/uqwordladder.c
+
+Removed bugs
+
+
+Index: uqwordladder.c
+ uqwordladder.c |  289 +++++++++++++++++++++------------------------------------
+ 1 file changed, 111 insertions(+), 178 deletions(-)
+
+------------------------------------------------------------------------
+r17 | s4751192 | 2023-08-24 15:26:52 +1000 (Thu, 24 Aug 2023) | 2 lines
+Changed paths:
+   M /trunk/a1/uqwordladder.c
+
+Improved functionality and removed bugs.
+
+
+Index: uqwordladder.c
+ uqwordladder.c |  108 +++++++++++++++++++++++++++++----------------------------
+ 1 file changed, 56 insertions(+), 52 deletions(-)
+
+------------------------------------------------------------------------
+r18 | s4751192 | 2023-08-24 15:29:58 +1000 (Thu, 24 Aug 2023) | 2 lines
+Changed paths:
+   M /trunk/a1/uqwordladder.c
+
+Removed a commented out function.
+
+
+Index: uqwordladder.c
+ uqwordladder.c |   52 ----------------------------------------------------
+ 1 file changed, 52 deletions(-)
+
+------------------------------------------------------------------------
+r19 | s4751192 | 2023-08-24 15:43:02 +1000 (Thu, 24 Aug 2023) | 2 lines
+Changed paths:
+   M /trunk/a1/uqwordladder.c
+
+Fized some styling issues
+
+
+Index: uqwordladder.c
+ uqwordladder.c |   22 ++++++++++++----------
+ 1 file changed, 12 insertions(+), 10 deletions(-)
+
+------------------------------------------------------------------------
+r20 | s4751192 | 2023-08-24 15:44:39 +1000 (Thu, 24 Aug 2023) | 2 lines
+Changed paths:
+   M /trunk/a1/uqwordladder.c
+
+Fized indenting issues.
+
+
+Index: uqwordladder.c
+ uqwordladder.c |    5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+------------------------------------------------------------------------
